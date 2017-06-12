@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <!-- TEXT VIEW for hour key-->
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextStyle"
+        android:paddingBottom="15dp"
+        android:text="hour"/>
+
+
+    <!-- Condition layout-->
+    <LinearLayout
+        android:id="@+id/condition_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/hour"
+        android:layout_marginLeft="90dp">
+
+        <TextView
+            android:id="@+id/temp_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/condition_forecast_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/forecast_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+    <!-- TEXT VIEW for FeelLike key-->
+
+    <TextView
+        android:id="@+id/feelLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextStyle"
+        android:text="Feels Like : "
+        android:layout_below="@+id/hour"
+        />
+
+
+    <!-- TEXT VIEW for FeelLike value-->
+
+    <TextView
+        android:id="@+id/feelLike_forecast_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/feelLike"
+
+        />
+
+    <!-- TEXT VIEW for Will it Rain Key-->
+
+    <TextView
+        android:id="@+id/rain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/feelLike_forecast_textView"
+        android:layout_below="@id/condition_linear"
+        android:layout_marginLeft="90dp"
+        android:textAppearance="@style/TextStyle"
+        android:text="Rain"/>
+
+
+    <!-- TEXT VIEW for Will it Rain value-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/rain"
+        android:layout_below="@id/condition_linear"/>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="MAX">MAX : </string>
+    <string name="MIN">MIN : </string>
+    <string name="Humadity">Humadity : </string>
+    <string name="Clouds">Clouds : </string>
+    <string name="Condition">Condition : </string>
+    <string name="Feels_Like">Feels Like : </string>
+    <string name="Sun_Rise">Sun Rise : </string>
+    <string name="Sun_Set">Sun Set : </string>
+
+</resources>

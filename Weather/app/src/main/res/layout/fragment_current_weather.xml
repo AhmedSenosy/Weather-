@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.senosy.weather.currentWeather">
+
+    <LinearLayout
+
+        android:id="@+id/activity_weather"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Text view for location -->
+        <TextView
+            android:id="@+id/location_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="15dp"
+            android:text="Cairo"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            />
+
+        <!-- Text view for cuurent temp -->
+
+        <TextView
+            android:id="@+id/current_temp_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:background="@drawable/magnitude_circle"
+            android:layout_marginBottom="15dp"
+            android:textColor="#E3F2FD"
+            android:textSize="85dp"/>
+
+        <TextView
+            android:id="@+id/last_update_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:paddingLeft="15dp"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
